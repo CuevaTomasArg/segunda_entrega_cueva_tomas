@@ -1,0 +1,289 @@
+/*CLASS MODULOS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #eae9e9;
+}
+main{
+    margin: 58px 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:Helvetica, sans-serif;
+    margin: 16px 32px;
+}
+p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.navbar{
+    background-color:#458890;
+}
+.navbar div{
+    background-color: #458890;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.centrarTexto{
+    text-align: center;
+}
+.bordeNegro{
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.imagenCarruselXL{
+    width: 600px;
+    height: auto;
+}
+.CallToAction{
+    font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1.5px solid #000;
+    border-radius: 16px;
+    padding: 2px 4px;
+}
+/*INDEX*/
+.seccionCards3x3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+}
+.seccionPropuestas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.seccionPropuestas>div{
+    width: 600px;
+    transition: all 2s;
+}
+.seccionPropuestas>div:hover{
+    transform: scale(1.05);
+}
+.seccionPropuestas img{
+    width: 100%;
+    height: auto;
+}
+.presentacion{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    align-items: center;
+    justify-items: center;
+}
+.derecha{
+    display:flex;
+    flex-direction: row ;
+    margin: 32px 256px 32px 64px;
+}
+.izquierda{
+    display:flex;
+    flex-direction: row-reverse ;
+    margin: 32px 64px 32px 256px;
+}
+.presentacion img{
+    width: 80%;
+}
+.presentacion p{
+    margin: 16px;
+}
+.seccionCards3x3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+/*SERVICIOS*/
+h1{
+    font-family: Helvetica, sans-serif;
+}
+.programas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccionCardsHorizontales{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: 1fr;
+}
+.seccionCardsHorizontales>div{
+    margin: 32px 64px;
+}
+.imagenProductoMD{
+    width: 232.883px;
+    height: auto;
+    object-fit: cover;
+}
+/*BENEFICIOS*/
+.seccionCarsd3x2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 32px;
+    column-gap: 64px;
+    justify-items: center;
+    align-items: center;
+}
+/*Contacto*/
+.formulario{
+    margin: 128px 128px 64px 128px;
+}
+form{
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.input{
+    width: 80%;
+    margin: 16px;
+}
+/*FOOTER*/
+.icono{
+    width: 32px;
+}
+.listaHorizontal{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+}
+footer{
+    background-color: #458890;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: left;
+    justify-content: space-around;
+}
+.lista li{
+    margin: 12px;
+}
+.listaFooter1{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+}
+.listaFooter1 li{
+    margin: 12px;
+}
+
+/*RESPONSIVE*/
+/*EXTRA-SMALL*/
+@media only screen and (min-width:375px) and (max-width:600px){
+    .derecha,.izquierda{
+        flex-direction: column;
+        margin: 16px auto;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+    .presentacion img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .seccionPropuestas{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0px auto;
+    }
+    .seccionPropuestas div{
+        width: 300px;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile h1 {
+        text-align: center;
+        width: 50%;
+        display: inline-block;
+    }
+    .mobile p{
+        text-align: center
+    }
+    .seccionCards3x3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .formulario{
+        margin: 64px;
+    }
+    .seccionCarsd3x2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media only screen and (min-width:601px) and (max-width:900px){
+    .presentacion{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 600px;
+        margin: 10px auto;
+    }
+    .derecha,.izquierda{
+        flex-direction: column;
+        width: 256px;
+    }
+    .presentacion img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .seccionCards3x3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        align-items: center;
+        justify-content: center;
+    }
+    .seccionCards3x3 >div{
+        display: inline-block;
+    }
+}
+
+/* 
+
+@media only screen and (min-width:600){
+
+}
+@media only screen and (min-width:600){
+
+}
+@media only screen and (min-width:600){
+
+}
+@media only screen and (min-width:600){
+
+}
+@media only screen and (min-width:600){
+
+} */
